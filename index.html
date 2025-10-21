@@ -1,0 +1,113 @@
+Aquí tienes un ejemplo completo de una **página web en HTML** con un diseño tipo recetario en tonos **azul marino**, que incluye enlaces a los archivos PDF (`receta1.pdf`, `receta2.pdf`, `receta3.pdf`, `receta4.pdf`) que están en la misma carpeta que el archivo `.html`.
+
+Guarda este código como `index.html` en la misma carpeta donde tienes los PDFs 👇
+
+---
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario Azul Marino</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #001f3f; /* Azul marino */
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #00264d;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #004080;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #0059b3;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: block;
+      text-align: center;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #001933;
+      color: #ccc;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Recetario Azul Marino</h1>
+  </header>
+
+  <main>
+    <h2>Recetas Disponibles</h2>
+    <ul>
+      <li><a href="receta1.pdf" target="_blank">🍝 Receta 1 - Pasta Mediterránea</a></li>
+      <li><a href="receta2.pdf" target="_blank">🥗 Receta 2 - Ensalada Fresca</a></li>
+      <li><a href="receta3.pdf" target="_blank">🍰 Receta 3 - Pastel de Chocolate</a></li>
+      <li><a href="receta4.pdf" target="_blank">🍲 Receta 4 - Sopa Tradicional</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    © 2025 Mi Recetario Azul Marino | Hecho con 💙
+  </footer>
+
+</body>
+</html>
+```
